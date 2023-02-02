@@ -18,4 +18,6 @@ crontab -e
 00 23 1 * * nice -n 19 /bin/sh script.sh day1 2>&1 | mail -s "day 1 vm backups" something@something.com
 ```
 
+We have used the ```day1``` variable to take backup for the VMs that are listed in this variable. We can use other variable to schedule the backup on a different day, so that the system does not get overloaded. 
+
 NOTE: THIS BACKUP PROCESS WILL TAKE TIME DEPENDING ON THE VOLUME OF EACH VM AND ALSO IT WILL RESTART THE VMs OF WHICH IT WILL TAKE BACKUP. SO PLEASE REMEMBER TO SAVE YOUR WORK ACCORDINGLY.
